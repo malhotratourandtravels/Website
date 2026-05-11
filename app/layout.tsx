@@ -38,6 +38,10 @@ export const metadata: Metadata = {
     "India Holiday Packages",
     "Affordable Tour Packages",
   ],
+    other: {
+    "google-site-verification":
+      "67bIOatIfM0M7PEWbnnmd3KPGoUTdnrW4623ZCugFiE",
+  },
 
   authors: [{ name: "Malhotra's Tour & Travel" }],
   creator: "Malhotra's Tour & Travel",

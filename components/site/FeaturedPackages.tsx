@@ -323,6 +323,7 @@ export function FeaturedPackages() {
                 </motion.div>
 
                 {/* Includes */}
+                {/* Includes */}
                 <motion.div
                   className="border-t border-border pt-5 mb-8"
                   initial={{ opacity: 0 }}
@@ -333,7 +334,8 @@ export function FeaturedPackages() {
                     Includes
                   </p>
 
-                  <div className="grid grid-cols-2 gap-3">
+                  {/* FIXED RESPONSIVE GRID */}
+                  <div className="grid grid-cols-1 min-[380px]:grid-cols-2 gap-3">
                     {pkg.includes.map((item, idx) => {
                       const Icon = item.icon;
 
@@ -349,13 +351,42 @@ export function FeaturedPackages() {
                           transition={{
                             delay: 0.45 + idx * 0.08,
                           }}
-                          className="flex items-center gap-3 rounded-2xl border border-border bg-primary/5 px-4 py-3"
+                          className="
+            flex items-center
+            gap-2 sm:gap-3
+            rounded-2xl
+            border border-border
+            bg-primary/5
+            px-3 sm:px-4
+            py-3
+            min-w-0
+          "
                         >
-                          <div className="flex h-8 w-8 min-h-8 min-w-8 items-center justify-center rounded-full bg-accent/15 text-accent ring-1 ring-accent/20">
-                            <Icon size={16} />
+                          {/* ICON */}
+                          <div
+                            className="
+              flex h-8 w-8
+              min-h-8 min-w-8
+              items-center justify-center
+              rounded-full
+              bg-accent/15
+              text-accent
+              ring-1 ring-accent/20
+              shrink-0
+            "
+                          >
+                            <Icon size={15} />
                           </div>
 
-                          <span className="text-sm text-foreground/80">
+                          {/* TEXT */}
+                          <span
+                            className="
+              text-xs sm:text-sm
+              text-foreground/80
+              leading-tight
+              break-words
+            "
+                          >
                             {item.label}
                           </span>
                         </motion.div>

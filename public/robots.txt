@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow internal system paths
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.malhotrastourandtravel.in/sitemap.xml

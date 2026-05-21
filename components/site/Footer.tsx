@@ -1,5 +1,6 @@
 "use client";
 import { Mail, Instagram, MapPin, Facebook, Youtube, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -33,7 +34,7 @@ export function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.facebook.com/share/15nAZcVXUEW/?mibextid=wwXIfr"
               className="group h-11 w-11 rounded-full border border-cream/15 bg-cream/5 backdrop-blur-sm flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300 hover:scale-110"
             >
               <Facebook
@@ -43,10 +44,10 @@ export function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://wa.me/918796390456"
               className="group h-11 w-11 rounded-full border border-cream/15 bg-cream/5 backdrop-blur-sm flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300 hover:scale-110"
             >
-              <Youtube
+              <FaWhatsapp
                 size={18}
                 className="text-primary-foreground/70 group-hover:text-accent-foreground transition"
               />

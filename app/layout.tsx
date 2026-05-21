@@ -164,7 +164,7 @@ export const metadata: Metadata = {
     description:
       "Personalized travel experiences across India including Kashmir, Himachal, Kedarnath, Rajasthan and Goa.",
 
-    images: ["/og-image.jpg"],
+    images: ["/logo.jpeg"],
   },
 
   icons: {
@@ -225,6 +225,22 @@ export default function RootLayout({
             }}
           />
         </noscript>
+        {/* SEO Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              name: "Malhotra's Tour & Travel",
+              url: "https://malhotrastourandtravel.in/",
+              logo: "https://malhotrastourandtravel.in/logo.jpeg",
+              image: "https://malhotrastourandtravel.in/logo.jpeg",
+              description:
+                "Premium handcrafted travel experiences across India.",
+            }),
+          }}
+        />
         <Navbar />
 
         {children}

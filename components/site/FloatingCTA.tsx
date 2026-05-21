@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram } from "lucide-react";
+import { Facebook, FacebookIcon, Instagram } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingCTA = () => {
@@ -31,6 +31,19 @@ const FloatingCTA = () => {
         aria-label="Instagram"
       >
         <Instagram className="h-6 w-6" />
+      </motion.a>
+      {/* Facebook */}
+      {/* Facebook */}
+      <motion.a
+        href="https://www.facebook.com/share/15nAZcVXUEW/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noreferrer"
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-2xl"
+        aria-label="Facebook"
+      >
+        <FacebookIcon className="h-6 w-6" />
       </motion.a>
     </div>
   );

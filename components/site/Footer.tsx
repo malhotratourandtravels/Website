@@ -70,7 +70,8 @@ export function Footer() {
           <ul className="space-y-4 text-primary-foreground/80">
             <li className="flex items-start gap-3">
               <MapPin size={18} className="text-accent shrink-0 mt-0.5" />
-              <span>532/1 Devli, Durga Vihar Bandh Road, Delhi - 110080</span>
+              <span>L-1/8 BASEMENT KH NO. 43/3/2 BLOCK L SANGAM VIHAR OPPOSITE SHREE RAM BARAT GHAR, ND-110080</span>
+              {/* <span>532/1 Devli, Durga Vihar Bandh Road, Delhi - 110080</span> */}
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-accent shrink-0" />

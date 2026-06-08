@@ -68,11 +68,13 @@ export function Footer() {
         <div className="md:col-span-4">
           <div className="text-xs uppercase tracking-[0.25em] text-accent font-semibold mb-5">Reach us</div>
           <ul className="space-y-4 text-primary-foreground/80">
-            <li className="flex items-start gap-3">
-              <MapPin size={18} className="text-accent shrink-0 mt-0.5" />
-              <span>L-1/8 BASEMENT KH NO. 43/3/2 BLOCK L SANGAM VIHAR OPPOSITE SHREE RAM BARAT GHAR, ND-110080</span>
-              {/* <span>532/1 Devli, Durga Vihar Bandh Road, Delhi - 110080</span> */}
-            </li>
+            <a href="https://maps.app.goo.gl/XkECqey6Kozu6zA19" className="hover:text-accent transition" target="_blank" rel="noopener noreferrer">
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-accent shrink-0 mt-0.5" />
+                <span>8 Basement, L-1, Block A1, Chhatarpur, New Delhi, Delhi 110080</span>
+                {/* <span>532/1 Devli, Durga Vihar Bandh Road, Delhi - 110080</span> */}
+              </li>
+            </a>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-accent shrink-0" />
 

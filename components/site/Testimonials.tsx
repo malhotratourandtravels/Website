@@ -207,7 +207,7 @@ export function Testimonials() {
                 <motion.a
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  href="https://share.google/nQP515IVXhhAWXy5i" // not new
+                  href="https://share.google/NM3i809a3AsJth1N6" // new 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-accent/30 px-6 py-3 text-sm font-semibold text-accent hover:bg-accent/10 transition-all"

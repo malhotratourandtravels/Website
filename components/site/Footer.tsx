@@ -71,7 +71,7 @@ export function Footer() {
             <a href="https://maps.app.goo.gl/XkECqey6Kozu6zA19" className="hover:text-accent transition" target="_blank" rel="noopener noreferrer">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-accent shrink-0 mt-0.5" />
-                <span>8 Basement, L-1, Block A1, Chhatarpur, New Delhi, Delhi 110080</span>
+                <span>BASEMENT KH, NO. 43/3/2, L-1/8, opposite SHREE RAM BARAT GHAR, Block L, Devli, Sangam Vihar, New Delhi, Delhi 110080</span>
                 {/* <span>532/1 Devli, Durga Vihar Bandh Road, Delhi - 110080</span> */}
               </li>
             </a>

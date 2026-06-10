@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
+  // console.log("EMAIL_USER:", process.env.EMAIL_USER);
+  // console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+  // console.log("EMAIL_TO:", process.env.EMAIL_TO);
   try {
     const {
       name,
@@ -30,7 +33,8 @@ export async function POST(req: Request) {
       secure: true,
       auth: {
         user: process.env.EMAIL_USER, //malhotratourandtravels2@gmail.com
-        pass: process.env.EMAIL_PASS, // tzvgewihvsrmmpxo
+        pass: process.env.EMAIL_PASS, // dbxyrkubnvcybksi
+
       },
     });
 

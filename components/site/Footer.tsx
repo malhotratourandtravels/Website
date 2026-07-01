@@ -1,11 +1,11 @@
 "use client";
-import { Mail, Instagram, MapPin, Facebook, Youtube, Phone } from "lucide-react";
+import { Mail, Instagram, MapPin, Facebook, Youtube, Phone, YoutubeIcon } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground border-t border-cream/10">
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-12 gap-10">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-12 w-12 rounded-full overflow-hidden ring-2 ring-accent/40">
@@ -21,6 +21,17 @@ export function Footer() {
           </p>
 
           <div className="flex items-center gap-3 mt-7">
+            <a
+              href="https://www.youtube.com/@malhotrastourandtravel"
+              target="_blank"
+              rel="noreferrer"
+              className="group h-11 w-11 rounded-full border border-cream/15 bg-cream/5 backdrop-blur-sm flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300 hover:scale-110"
+            >
+              <YoutubeIcon
+                size={18}
+                className="text-primary-foreground/70 group-hover:text-accent-foreground transition"
+              />
+            </a>
             <a
               href="https://www.instagram.com/malhotrastourandtravel"
               target="_blank"

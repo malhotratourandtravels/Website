@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Mail, Instagram } from "lucide-react";
+import { Menu, X, Mail, Instagram, Youtube, YoutubeIcon } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
@@ -63,8 +63,22 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-
+        
         <div className="hidden lg:flex items-center gap-3">
+           {/* YouTube */}
+          <a
+            href="https://www.youtube.com/@malhotrastourandtravel"
+            target="_blank"
+            rel="noreferrer"
+            className={`h-9 w-9 grid place-items-center rounded-full border transition ${scrolled
+              ? "border-border hover:bg-accent hover:border-accent hover:text-accent-foreground"
+              : "border-cream/30 hover:border-accent text-cream hover:bg-accent hover:border-accent"
+              }`}
+            aria-label="YouTube"
+          >
+            <YoutubeIcon size={16} />
+          </a>
+
           {/* Instagram */}
           <a
             href="https://www.instagram.com/malhotrastourandtravel"

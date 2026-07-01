@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Facebook, FacebookIcon, Instagram } from "lucide-react";
+import { Facebook, FacebookIcon, Instagram, Youtube } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const FloatingCTA = () => {
@@ -33,7 +33,6 @@ const FloatingCTA = () => {
         <Instagram className="h-6 w-6" />
       </motion.a>
       {/* Facebook */}
-      {/* Facebook */}
       <motion.a
         href="https://www.facebook.com/share/15nAZcVXUEW/?mibextid=wwXIfr"
         target="_blank"
@@ -44,6 +43,18 @@ const FloatingCTA = () => {
         aria-label="Facebook"
       >
         <FacebookIcon className="h-6 w-6" />
+      </motion.a>
+      {/* YouTube */}
+      <motion.a
+        href="https://www.youtube.com/@malhotrastourandtravel"
+        target="_blank"
+        rel="noreferrer"
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.95 }}
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-2xl"
+        aria-label="YouTube"
+      >
+        <Youtube className="h-6 w-6" />
       </motion.a>
     </div>
   );
